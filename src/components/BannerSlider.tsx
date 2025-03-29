@@ -20,11 +20,11 @@ export default function BannerSlider() {
   }, [dispatch]);
 
   return (
-    <div id="box-banner" className="relative w-full min-h-[607px] overflow-hidden">
+    <div id="box-banner" className="relative w-full h-[607px] overflow-hidden">
       {/* Danh sách slides */}
       <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide) => (
-          <div key={slide.id} className="min-w-full min-h-[607px] relative banner">
+          <div key={slide.id} className="min-w-full h-[607px] relative banner">
             <Image src={slide.image} alt={slide.title} fill className="object-fill" />
           </div>
         ))}
@@ -41,7 +41,7 @@ export default function BannerSlider() {
       {/* Dots Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
-          <div key={index} className={`w-3 h-3 rounded-full ${currentIndex === index ? "bg-white" : "bg-gray-400"}`} />
+          <div key={index} className={`w-2 h-2 rounded-full ${currentIndex === index ? "bg-white" : "bg-gray-400"}`} />
         ))}
       </div>
     </div>

@@ -17,6 +17,7 @@ const initialState: SliderState = {
     { id: 1, image: "/assets/image/banner-1.png", title: "Ưu đãi đặc biệt", description: "Giảm giá lên đến 50%" },
     { id: 2, image: "/assets/image/banner-2.png", title: "Sản phẩm mới", description: "Cập nhật sản phẩm hot nhất" },
     { id: 3, image: "/assets/image/banner-3.png", title: "Mua sắm tiện lợi", description: "Giao hàng tận nơi, nhanh chóng" },
+    { id: 4, image: "/assets/image/banner-4.png", title: "Tuươi ngon", description: "Sữa thanh trùng" },
   ],
   currentIndex: 0,
 };
